@@ -8,6 +8,24 @@
 2. 模型能否预测训练中未出现过的添加剂？
 3. Morgan 指纹是否比组分身份编码更有帮助？
 
+## 获取数据
+
+本仓库通过原始来源提供数据下载入口。
+
+1. 打开下面的工作簿链接，点击 **Download raw file**。
+2. 在项目根目录创建 `data/raw/` 文件夹。
+3. 将下载的文件放到以下位置，保留文件名：
+
+   `data/raw/Dreher_and_Doyle_input_data.xlsx`
+
+分析使用工作簿中的 `FullCV_01` 工作表，共 3,955 条记录。
+
+- [下载 Excel 工作簿](https://github.com/rxn4chemistry/rxn_yields/blob/master/data/Buchwald-Hartwig/Dreher_and_Doyle_input_data.xlsx)
+- [原论文](https://doi.org/10.1126/science.aar5169)
+
+完成数据下载和环境安装后，选择项目的 `.venv` 内核，
+按 `01` 至 `07` 的 Notebook 顺序运行，每个文件从顶部执行。
+
 ## 数据
 
 使用 `Dreher_and_Doyle_input_data.xlsx` 的 `FullCV_01` 工作表，共 3,955 条记录。
