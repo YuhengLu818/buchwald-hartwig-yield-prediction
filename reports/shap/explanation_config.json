@@ -1,0 +1,23 @@
+{
+  "model": "reports/morgan_random_forest/additive_model.joblib",
+  "feature_perturbation": "tree_path_dependent",
+  "model_output": "raw",
+  "shap_version": "0.54.1",
+  "roles": [
+    "Aryl halide",
+    "Ligand",
+    "Base",
+    "Additive"
+  ],
+  "fingerprint": {
+    "type": "Morgan",
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": true
+  },
+  "test_records": 180,
+  "case_ids": {
+    "Low-error case": 3552,
+    "High-error case": 2293
+  }
+}

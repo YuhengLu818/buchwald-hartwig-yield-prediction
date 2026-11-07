@@ -1,0 +1,47 @@
+{
+  "data_file": "data/raw/Dreher_and_Doyle_input_data.xlsx",
+  "sheet": "FullCV_01",
+  "split_manifest": "data/splits/split_manifest.csv",
+  "split": "random",
+  "roles": [
+    "Aryl halide",
+    "Ligand",
+    "Base",
+    "Additive"
+  ],
+  "fingerprint": {
+    "type": "Morgan",
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": true
+  },
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "selection_metric": "mean validation MAE",
+  "cv_folds": 3,
+  "cv_type": "KFold",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "rdkit": "2026.09.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  }
+}

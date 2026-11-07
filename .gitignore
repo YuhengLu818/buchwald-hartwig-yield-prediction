@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+.env
+.env.*
+
+# Regenerable model and explanation files
+*.joblib
+reports/shap/*.npz

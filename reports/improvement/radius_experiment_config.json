@@ -1,0 +1,40 @@
+{
+  "reference_model": "reports/morgan_random_forest/additive_model.joblib",
+  "split_manifest": "data/splits/split_manifest.csv",
+  "radii": [
+    2,
+    3
+  ],
+  "fpSize": 2048,
+  "includeChirality": true,
+  "role_order": [
+    "Aryl halide",
+    "Ligand",
+    "Base",
+    "Additive"
+  ],
+  "cv": "GroupKFold",
+  "n_splits": 3,
+  "group_column": "Additive",
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": 15,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "selected_radius": 2
+}
